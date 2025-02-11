@@ -93,6 +93,7 @@ Aside from your own website, consider Hugging Face the homepage of your AI/machi
 - [ ] Ecosystem overview (transformers, datasets, accelerate, tokenizers, Spaces, demos, models, hub etc.)
 - [x] Text classification
 - [ ] Object detection
+- [ ] Image classification
 - [ ] Named entity recognition
 - [ ] LLM fine-tuning
 - [ ] VLM fine-tuning
@@ -113,3 +114,7 @@ See [setup](https://github.com/mrdbourke/learn-huggingface/blob/main/extras/setu
 > Is this an official Hugging Face website?
 
 No, it's a personal project by myself ([Daniel Bourke](https://www.mrdbourke.com)) to learn and help others learn the Hugging Face ecosystem.
+
+## Log
+
+11 Feb 2025 - Add object detection base tutorial (code works, but this is a first draft, stay tuned for updates to make it cleaner) 

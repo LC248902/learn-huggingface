@@ -198,7 +198,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/hugging_face_text_classification_tutorial.html">Natural Language Processing (NLP)</a></li><li class="breadcrumb-item"><a href="../notebooks/hugging_face_text_classification_tutorial.html">Text Classification</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/hugging_face_text_classification_tutorial.html">Natural Language Processing (NLP)</a></li><li class="breadcrumb-item"><a href="../notebooks/hugging_face_text_classification_tutorial.html">Build a custom text classification model and demo</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -230,7 +230,24 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../notebooks/hugging_face_text_classification_tutorial.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Text Classification</span></a>
+ <span class="menu-text">Build a custom text classification model and demo</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Computer Vision</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/hugging_face_object_detection_tutorial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">(Work in progress) Build a custom object detection model and demo</span></a>
   </div>
 </li>
       </ul>
@@ -311,7 +328,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/hugging_face_text_classification_tutorial.html">Natural Language Processing (NLP)</a></li><li class="breadcrumb-item"><a href="../notebooks/hugging_face_text_classification_tutorial.html">Text Classification</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../notebooks/hugging_face_text_classification_tutorial.html">Natural Language Processing (NLP)</a></li><li class="breadcrumb-item"><a href="../notebooks/hugging_face_text_classification_tutorial.html">Build a custom text classification model and demo</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Text Classification with Hugging Face Transformers Tutorial</h1>
 </div>
@@ -336,7 +353,7 @@ window.Quarto = {
 
 
 <p><a target="_blank" href="https://colab.research.google.com/github/mrdbourke/learn-huggingface/blob/main/notebooks/hugging_face_text_classification_tutorial.ipynb"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"> </a></p>
-<p><a href="https://github.com/mrdbourke/learn-huggingface/blob/main/notebooks/hugging_face_text_classification_tutorial.ipynb">Source code on GitHub</a> | <a href="https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial.html">Online book version</a> | <a href="https://www.learnhuggingface.com/extras/setup">Setup guide</a></p>
+<p><a href="https://github.com/mrdbourke/learn-huggingface/blob/main/notebooks/hugging_face_text_classification_tutorial.ipynb">Source code on GitHub</a> | <a href="https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial.html">Online book version</a> | <a href="https://www.learnhuggingface.com/extras/setup">Setup guide</a> | <a href="https://dbourke.link/ZTM-HF-Text-Classification">Video Course</a> (step by step walkthrough)</p>
 <section id="overview" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="overview"><span class="header-section-number">1</span> Overview</h2>
 <p>Welcome to the Learn Hugging Face Text Classificaiton project!</p>
@@ -1951,9 +1968,10 @@ Note
 <span id="cb81-6"><a href="#cb81-6" aria-hidden="true" tabindex="-1"></a>    args<span class="op">=</span>training_args,</span>
 <span id="cb81-7"><a href="#cb81-7" aria-hidden="true" tabindex="-1"></a>    train_dataset<span class="op">=</span>tokenized_dataset[<span class="st">"train"</span>],</span>
 <span id="cb81-8"><a href="#cb81-8" aria-hidden="true" tabindex="-1"></a>    eval_dataset<span class="op">=</span>tokenized_dataset[<span class="st">"test"</span>],</span>
-<span id="cb81-9"><a href="#cb81-9" aria-hidden="true" tabindex="-1"></a>    tokenizer<span class="op">=</span>tokenizer, <span class="co"># Pass tokenizer to the Trainer for dynamic padding (padding as the training happens) (see "data_collator" in the Trainer docs)</span></span>
-<span id="cb81-10"><a href="#cb81-10" aria-hidden="true" tabindex="-1"></a>    compute_metrics<span class="op">=</span>compute_accuracy</span>
-<span id="cb81-11"><a href="#cb81-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb81-9"><a href="#cb81-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Note: the 'tokenizer' parameter will be changed to 'processing_class' in Transformers v5.0.0</span></span>
+<span id="cb81-10"><a href="#cb81-10" aria-hidden="true" tabindex="-1"></a>    tokenizer<span class="op">=</span>tokenizer, <span class="co"># Pass tokenizer to the Trainer for dynamic padding (padding as the training happens) (see "data_collator" in the Trainer docs)</span></span>
+<span id="cb81-11"><a href="#cb81-11" aria-hidden="true" tabindex="-1"></a>    compute_metrics<span class="op">=</span>compute_accuracy</span>
+<span id="cb81-12"><a href="#cb81-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Woohoo! We’ve created our own <code>trainer</code>.</p>
 <p>We’re one step closer to training!</p>

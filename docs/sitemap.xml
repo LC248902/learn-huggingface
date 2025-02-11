@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.learnhuggingface.com/index.html</loc>
-    <lastmod>2024-08-01T00:22:49.469Z</lastmod>
+    <lastmod>2024-10-01T22:41:42.186Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/extras/glossary.html</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial.html</loc>
-    <lastmod>2024-08-01T00:40:33.588Z</lastmod>
+    <lastmod>2025-01-24T02:40:22.134Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/extras/resources.html</loc>
@@ -27,5 +27,9 @@
   <url>
     <loc>https://www.learnhuggingface.com/about.html</loc>
     <lastmod>2024-07-27T03:55:09.347Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial.html</loc>
+    <lastmod>2025-02-11T02:14:52.242Z</lastmod>
   </url>
 </urlset>

@@ -34,7 +34,11 @@ website:
       - section: "Natural Language Processing (NLP)"
         contents:
           - href: notebooks/hugging_face_text_classification_tutorial.ipynb
-            text: Text Classification
+            text: Build a custom text classification model and demo
+      - section: "Computer Vision"
+        contents:
+          - href: notebooks/hugging_face_object_detection_tutorial.ipynb
+            text: (Work in progress) Build a custom object detection model and demo
   page-footer: 
     right:
       - icon: globe
