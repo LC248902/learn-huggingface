@@ -736,14 +736,14 @@ Food Not Food Image Caption Dataset Creation
 <img src="https://huggingface.co/datasets/mrdbourke/learn-hf-images/resolve/main/learn-hf-text-classification/03-places-to-get-text-datasets.png" alt="
 Side-by-side comparison of text classification datasets available on Hugging Face and Kaggle. The Hugging Face interface shows a variety of datasets categorized under 'Text Classification', while the Kaggle interface displays a search for text classification datasets, listing several options. Both platforms provide extensive datasets for machine learning and natural language processing projects. The image emphasizes that Hugging Face and Kaggle are valuable resources for obtaining datasets, depicted with respective platform screenshots and highlighted sections for text classification." style="width: 100%; max-width: 900px; height: auto;" class="figure-img">
 <figcaption>
-Hugging Face Datasets and Kaggle Datasets are two of the best places on the internet to find all kinds of different datasets. If you can’t find an existing dataset related to your problem you can either use your own data or potentially generate synthetic data samples with an LLM. For more on synthetic data generation, see the <a href="https://developer.nvidia.com/blog/creating-synthetic-data-using-llama-3-1-405b/">Creating Synthetic Data</a> article by NVIDIA.
+Hugging Face Datasets and Kaggle Datasets are two of the best places on the internet to find all kinds of different datasets. If you can’t find an existing dataset related to your problem you can either use your own data or potentially generate synthetic data samples with an LLM. For more on synthetic data generation, see the <a href="https://developer.nvidia.com/blog/creating-synthetic-data-using-llama-3-1-405b">Creating Synthetic Data</a> article by NVIDIA.
 </figcaption>
 </figure>
 </section>
 <section id="loading-the-dataset" class="level3" data-number="3.2">
 <h3 data-number="3.2" class="anchored" data-anchor-id="loading-the-dataset"><span class="header-section-number">3.2</span> Loading the dataset</h3>
 <p>Once we’ve found/prepared a dataset on the Hugging Face Hub, we can use the Hugging Face <a href="https://huggingface.co/docs/datasets/en/index"><code>datasets</code></a> library to load it.</p>
-<p>To load a dataset we can use the <a href="https://huggingface.co/docs/datasets/v2.20.0/en/package_reference/loading_methods#datasets.load_dataset"><code>datasets.load_dataset(path=NAME_OR_PATH_OF_DATASET)</code></a> function and pass it the name/path of the dataset we want to load.</p>
+<p>To load a dataset we can use the <a href="https://huggingface.co/docs/datasets/en/package_reference/loading_methods#datasets.load_dataset"><code>datasets.load_dataset(path=NAME_OR_PATH_OF_DATASET)</code></a> function and pass it the name/path of the dataset we want to load.</p>
 <p>In our case, our dataset name is <code>mrdbourke/learn_hf_food_not_food_image_captions</code> (you can also change this for your own dataset).</p>
 <p>And since our dataset is hosted on Hugging Face, when we run the following code for the first time, it will download it.</p>
 <p>If your target dataset is quite large, this download may take a while.</p>
