@@ -16,7 +16,8 @@ This is messy and a work in progress. Will tidy up later.
 * fine-tuning = a type of transfer learning where you take the existing patterns of one model (usually trained on a very large dataset) and customize them to work for your smaller dataset 
 * hyperparameters = values you can set to adjust training settings, for example, learning rate is a hyperparameter that is adjustable 
 * Hugging Face Hub (or Hub for short) = Place to store datasets, models, and other resources of your own + find existing datasets, models & scripts others have shared. If you are familiar with GitHub, Hugging Face is like the GitHub of machine learning.
-* Hugging Face Spaces = A platform to share and run machine learning apps/demos, usually built with Gradio or Streamlit
+* [Auto Classes](https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes) = A series of classes in `transformers` which enables automatic loading of preprocessor or model classes based on the name or path of the model. For example you can load the processor for `microsoft/conditional-detr-resnet-50` with `transformers.AutoImageProcessor(microsoft/conditional-detr-resnet-50)` or the model architecture with `transformers.AutoModelForObjectDetection(microsoft/conditional-detr-resnet-50)`. 
+* Hugging Face Spaces = A platform to share and run machine learning apps/demos, these can be built with HTML, Gradio or Streamlit 
 * HF = Hugging Face
 * NLP = Natural Language Processing
 * CV = Computer Vision
