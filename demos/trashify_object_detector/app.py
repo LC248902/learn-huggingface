@@ -161,7 +161,7 @@ demo = gr.Interface(
         gr.Text(label="Text Output")
     ],
     title="🚮 Trashify Object Detection Demo V4",
-    description="Help clean up your local area! Upload an image and get +1 if there is all of the following items detected: trash, bin, hand.",
+    description=description,
     # Examples come in the form of a list of lists, where each inner list contains elements to prefill the `inputs` parameter with
     # See where the examples originate from here: https://huggingface.co/datasets/mrdbourke/trashify_examples/
     examples=[
