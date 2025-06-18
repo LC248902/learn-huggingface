@@ -38,7 +38,7 @@ website:
       - section: "Computer Vision"
         contents:
           - href: notebooks/hugging_face_object_detection_tutorial.ipynb
-            text: (Work in progress) Build a custom object detection model and demo
+            text: Build a custom object detection model and demo
   page-footer: 
     right:
       - icon: globe
