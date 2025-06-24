@@ -1,5 +1,5 @@
 ---
-title: "Learn Hugging Face 🤗 (work in progress)"
+title: "Learn Hugging Face 🤗"
 ---
 
 Website dedicated to teaching the Hugging Face ecosystem with practical examples.
