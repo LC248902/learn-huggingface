@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.learnhuggingface.com/index.html</loc>
-    <lastmod>2024-10-01T22:41:42.186Z</lastmod>
+    <lastmod>2025-06-24T23:24:46.820Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/extras/glossary.html</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial.html</loc>
-    <lastmod>2025-02-12T01:33:37.798Z</lastmod>
+    <lastmod>2025-06-05T22:53:18.518Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/extras/resources.html</loc>
@@ -30,6 +30,22 @@
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial.html</loc>
-    <lastmod>2025-02-19T06:25:51.863Z</lastmod>
+    <lastmod>2025-06-25T03:32:14.726Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial-try-D-FINE.html</loc>
+    <lastmod>2025-05-13T00:23:17.596Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial-try-RT_DETRv2.html</loc>
+    <lastmod>2025-05-13T04:03:28.568Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial_ORIGINAL_with_extensions.html</loc>
+    <lastmod>2025-05-13T03:01:12.238Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.learnhuggingface.com/notebooks/scratch_pad.html</loc>
+    <lastmod>2025-02-26T22:43:10.393Z</lastmod>
   </url>
 </urlset>
