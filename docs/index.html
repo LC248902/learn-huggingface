@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learn Hugging Face 🤗 – Learn Hugging Face 🤗 (work in progress)</title>
+<title>Learn Hugging Face 🤗</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,11 +70,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Learn Hugging Face 🤗 - Learn Hugging Face 🤗 (work in progress)">
+<meta property="og:title" content="Learn Hugging Face 🤗">
 <meta property="og:description" content="Practical hands-on machine learning tutorials using the Hugging Face ecosystem.">
 <meta property="og:image" content="https://huggingface.co/datasets/mrdbourke/learn-hf-images/resolve/main/misc/learn_hf_cover_image.png">
 <meta property="og:site_name" content="Learn Hugging Face 🤗">
-<meta name="twitter:title" content="Learn Hugging Face 🤗 - Learn Hugging Face 🤗 (work in progress)">
+<meta name="twitter:title" content="Learn Hugging Face 🤗">
 <meta name="twitter:description" content="Practical hands-on machine learning tutorials using the Hugging Face ecosystem.">
 <meta name="twitter:image" content="https://huggingface.co/datasets/mrdbourke/learn-hf-images/resolve/main/misc/learn_hf_cover_image.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Learn Hugging Face 🤗 (work in progress)</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Learn Hugging Face 🤗</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -179,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./notebooks/hugging_face_object_detection_tutorial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">(Work in progress) Build a custom object detection model and demo</span></a>
+ <span class="menu-text">Build a custom object detection model and demo</span></a>
   </div>
 </li>
       </ul>
@@ -210,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Learn Hugging Face 🤗 (work in progress)</h1>
+<h1 class="title">Learn Hugging Face 🤗</h1>
 </div>
 
 
@@ -256,6 +256,7 @@ A general Hugging Face workflow from idea to shared model and demo using tools f
 <section id="updates" class="level2">
 <h2 class="anchored" data-anchor-id="updates">Updates</h2>
 <ul>
+<li><strong>18 June 2025</strong> - All code has been completed for the <a href="https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial">object detection project</a>, train a custom object detection model and make a demo with it for others to try! (video course to come soon)</li>
 <li><strong>1 Oct 2024</strong> - Video course version of text classification is <a href="https://dbourke.link/ZTM-HF-Text-Classification">live on ZTM</a>! Inside, we’ll walkthrough every line of code building the <a href="https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial">text classification project</a> with Hugging Face Datasets, Transformers and Spaces.</li>
 </ul>
 </section>
@@ -283,7 +284,7 @@ A general Hugging Face workflow from idea to shared model and demo using tools f
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial">Text classification</a> (good place to start)</td>
+<td><a href="https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial">Text classification</a></td>
 <td>Build project “Food Not Food”, a text classification model to classify image captions into “food” if they’re about food or “not_food” if they’re not about food. This is the ideal place to get started if you’ve never used the Hugging Face ecosystem.</td>
 <td><a href="https://huggingface.co/datasets/mrdbourke/learn_hf_food_not_food_image_captions">Dataset</a></td>
 <td><a href="https://huggingface.co/mrdbourke/learn_hf_food_not_food_text_classifier-distilbert-base-uncased">Model</a></td>
@@ -291,8 +292,16 @@ A general Hugging Face workflow from idea to shared model and demo using tools f
 <td><a href="https://dbourke.link/ZTM-HF-Text-Classification">Video Course</a></td>
 </tr>
 <tr class="even">
+<td><a href="https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial">Object Detection</a></td>
+<td>Build Trashify 🚮, an object detection model to detect “trash”, “hand”, “bin” to incentivize people to clean up their local area. Start with a dataset, customize an open-source object detection model and turn it into a demo application that others can use and try out on their own images.</td>
+<td><a href="https://huggingface.co/datasets/mrdbourke/trashify_manual_labelled_images">Dataset</a></td>
+<td><a href="https://huggingface.co/mrdbourke/rt_detrv2_finetuned_trashify_box_detector_v1">Model</a></td>
+<td><a href="https://huggingface.co/spaces/mrdbourke/trashify_demo_v4">Demo</a></td>
+<td>Video Course (coming soon)</td>
+</tr>
+<tr class="odd">
 <td>More to come soon!</td>
-<td>Let me know if you’d like to see anything specific by <a href="https://github.com/mrdbourke/learn-huggingface/issues">leaving an issue on GitHub</a>.</td>
+<td>Let me know if you’d like to see anything specific by <a href="https://github.com/mrdbourke/learn-huggingface/issues">leaving an issue</a>.</td>
 <td></td>
 <td></td>
 <td></td>
