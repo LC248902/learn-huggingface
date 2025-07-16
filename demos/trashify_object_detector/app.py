@@ -100,31 +100,32 @@ def predict_on_image(image, conf_threshold):
 
     ### 5. Create logic for outputting information message ### 
 
-    # Setup blank string to print out
-    return_string = ""
-
     # Setup set of target items to discover
     target_items = {"trash", "bin", "hand"} 
     detected_items = set(detected_class_name_text_labels)
 
     # If no items detected or trash, bin, hand not in detected items, return notification
     if not detected_items & target_items:
-        return_string = (f"No trash, bin or hand detected at confidence threshold {conf_threshold}. "
-                          "Try another image or lowering the confidence threshold.")
+        return_string = (
+            f"No trash, bin or hand detected at confidence threshold {conf_threshold}. "
+            "Try another image or lowering the confidence threshold."
+        )
         print(return_string)
         return image, return_string
 
     # If there are missing items, say what the missing items are
     missing_items = target_items - detected_items
     if missing_items:
-        return_string = (f"Detected the following items: {detected_class_name_text_labels}. But missing the following in order to get +1: {missing_items}. " 
-                          "If this is an error, try another image or altering the confidence threshold. "
-                          "Otherwise, the model may need to be updated with better data.")
+        return_string = (
+            f"Detected the following items: {sorted(detected_items & target_items)}. But missing the following in order to get +1: {sorted(missing_items)}. "
+            "If this is an error, try another image or altering the confidence threshold. "
+            "Otherwise, the model may need to be updated with better data."
+        )
         print(return_string)
         return image, return_string
 
     # If all target items are present (the final remaining case)
-    return_string = f"+1! Found the following items: {detected_class_name_text_labels}, thank you for cleaning up the area!"
+    return_string = f"+1! Found the following items: {sorted(detected_items)}, thank you for cleaning up the area!"
     print(return_string)
     return image, return_string
         
