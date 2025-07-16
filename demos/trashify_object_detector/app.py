@@ -36,15 +36,6 @@ color_dict = {
     "not_hand": "red",
 }
 
-# Create helper functions for seeing if items from one list are in another 
-def any_in_list(list_a, list_b):
-    "Returns True if *any* item from list_a is in list_b, otherwise False."
-    return any(item in list_b for item in list_a)
-
-def all_in_list(list_a, list_b):
-    "Returns True if *all* items from list_a are in list_b, otherwise False."
-    return all(item in list_b for item in list_a)
-
 ### 3. Create function to predict on a given image with a given confidence threshold ###
 def predict_on_image(image, conf_threshold):
     # Make sure model is in eval mode
@@ -78,7 +69,7 @@ def predict_on_image(image, conf_threshold):
     font = ImageFont.load_default(size=20)
 
     # Get class names as text for print out
-    class_name_text_labels = []
+    detected_class_name_text_labels = []
 
     # Iterate through the predictions of the model and draw them on the target image
     for box, score, label in zip(results["boxes"], results["scores"], results["labels"]):
@@ -88,7 +79,7 @@ def predict_on_image(image, conf_threshold):
         # Get label_name
         label_name = id2label[label.item()]
         targ_color = color_dict[label_name]
-        class_name_text_labels.append(label_name)
+        detected_class_name_text_labels.append(label_name)
 
         # Draw the rectangle
         draw.rectangle(xy=(x, y, x2, y2), 
@@ -107,35 +98,36 @@ def predict_on_image(image, conf_threshold):
     # Remove the draw each time
     del draw
 
+    ### 5. Create logic for outputting information message ### 
+
     # Setup blank string to print out
     return_string = ""
 
-    # Setup list of target items to discover
-    target_items = ["trash", "bin", "hand"]
+    # Setup set of target items to discover
+    target_items = {"trash", "bin", "hand"} 
+    detected_items = set(detected_class_name_text_labels)
 
-    ### 5. Create logic for outputting information message ### 
-
-    # If no items detected or trash, bin, hand not in list, return notification 
-    if (len(class_name_text_labels) == 0) or not (any_in_list(list_a=target_items, list_b=class_name_text_labels)):
-        return_string = f"No trash, bin or hand detected at confidence threshold {conf_threshold}. Try another image or lowering the confidence threshold."
+    # If no items detected or trash, bin, hand not in detected items, return notification
+    if not detected_items & target_items:
+        return_string = (f"No trash, bin or hand detected at confidence threshold {conf_threshold}. "
+                          "Try another image or lowering the confidence threshold.")
+        print(return_string)
         return image, return_string
 
-    # If there are some missing, print the ones which are missing
-    elif not all_in_list(list_a=target_items, list_b=class_name_text_labels):
-        missing_items = []
-        for item in target_items:
-            if item not in class_name_text_labels:
-                missing_items.append(item)
-        return_string = f"Detected the following items: {class_name_text_labels}. But missing the following in order to get +1: {missing_items}. If this is an error, try another image or altering the confidence threshold. Otherwise, the model may need to be updated with better data."
-        
-    # If all 3 trash, bin, hand occur = + 1
-    if all_in_list(list_a=target_items, list_b=class_name_text_labels):
-        return_string = f"+1! Found the following items: {class_name_text_labels}, thank you for cleaning up the area!"
+    # If there are missing items, say what the missing items are
+    missing_items = target_items - detected_items
+    if missing_items:
+        return_string = (f"Detected the following items: {detected_class_name_text_labels}. But missing the following in order to get +1: {missing_items}. " 
+                          "If this is an error, try another image or altering the confidence threshold. "
+                          "Otherwise, the model may need to be updated with better data.")
+        print(return_string)
+        return image, return_string
 
+    # If all target items are present (the final remaining case)
+    return_string = f"+1! Found the following items: {detected_class_name_text_labels}, thank you for cleaning up the area!"
     print(return_string)
-    
     return image, return_string
-
+        
 ### 6. Setup the demo application to take in image, make a prediction with our model, return the image with drawn predicitons ### 
 
 # Write description for our demo application
