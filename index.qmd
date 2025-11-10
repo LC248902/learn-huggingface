@@ -37,6 +37,7 @@ This will be our (rough) workflow:
 
 ## Updates
 
+* **07 Nov 2025** - Videos for the object detection project are now available on [ZTM in the Hugging Face Bootcamp](https://dbourke.link/ZTMHuggingFace)!
 * **18 June 2025** - All code has been completed for the [object detection project](https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial), train a custom object detection model and make a demo with it for others to try! (video course to come soon)
 * **1 Oct 2024** - Video course version of text classification is [live on ZTM](https://dbourke.link/ZTM-HF-Text-Classification)! Inside, we'll walkthrough every line of code building the [text classification project](https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial) with Hugging Face Datasets, Transformers and Spaces.
 
