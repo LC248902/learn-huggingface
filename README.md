@@ -35,6 +35,13 @@ This will be our (rough) workflow:
      <figcaption style="width: 100%; box-sizing: border-box;">A general Hugging Face workflow from idea to shared model and demo using tools from the Hugging Face ecosystem. These kind of workflows are not set in stone and are more of guide than specific directions. See information on each of the tools in the <a href="https://huggingface.co/docs">Hugging Face documentation</a>.</figcaption>
 </figure>
 
+## Updates
+
+* **08 Jan 2026** - Add first iteration of [full fine-tuning notebook for Gemma 3 270M](https://www.learnhuggingface.com/notebooks/hugging_face_llm_full_fine_tune_tutorial) (fully fine-tune a Small Language Model for structured data extraction)
+* **07 Nov 2025** - Videos for the object detection project are now available on [ZTM in the Hugging Face Bootcamp](https://dbourke.link/ZTMHuggingFace)!
+* **18 June 2025** - All code has been completed for the [object detection project](https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial), train a custom object detection model and make a demo with it for others to try! (video course to come soon)
+* **1 Oct 2024** - Video course version of text classification is [live on ZTM](https://dbourke.link/ZTM-HF-Text-Classification)! Inside, we'll walkthrough every line of code building the [text classification project](https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial) with Hugging Face Datasets, Transformers and Spaces.
+
 ## Contents
 
 All code and text will be free/open-source, [video step-by-step walkthroughs](https://dbourke.link/ZTMHuggingFace) are available as a paid upgrade on Zero to Mastery.
@@ -43,7 +50,10 @@ All code and text will be free/open-source, [video step-by-step walkthroughs](ht
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | 0 - [Text classification](https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial) | Build project "Food Not Food", a text classification model to classify image captions into "food" if they're about food or "not_food" if they're not about food. This is the ideal place to get started if you've never used the Hugging Face ecosystem. | [Dataset](https://huggingface.co/datasets/mrdbourke/learn_hf_food_not_food_image_captions) | [Model](https://huggingface.co/mrdbourke/learn_hf_food_not_food_text_classifier-distilbert-base-uncased) | [Demo](https://huggingface.co/spaces/mrdbourke/learn_hf_food_not_food_text_classifier_demo) | [Video Course](https://dbourke.link/ZTMHuggingFace) |
 | 1 - [Object Detection](https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial) | Build Trashify 🚮, an object detection model to detect "trash", "hand", "bin" to incentivize people to clean up their local area. Start with a dataset, customize an open-source object detection model and turn it into a demo application that others can use and try out on their own images. | [Dataset](https://huggingface.co/datasets/mrdbourke/trashify_manual_labelled_images) | [Model](https://huggingface.co/mrdbourke/rt_detrv2_finetuned_trashify_box_detector_v1) | [Demo](https://huggingface.co/spaces/mrdbourke/trashify_demo_v4) | [Video Course](https://dbourke.link/ZTMHuggingFace) |
+| 2 - (WIP) [LLM Full Fine-tuning](https://www.learnhuggingface.com/notebooks/hugging_face_llm_full_fine_tune_tutorial) | Fully fine-tune Google's Gemma 3 270M model to perform structured data extraction on any kind of text. | | | |
 | More to come soon! | Let me know if you'd like to see anything specific by [leaving an issue](https://github.com/mrdbourke/learn-huggingface/issues). | | | | |
+
+: {tbl-colwidths="[20,45,5,5,5]"}
 
 ## Who is it for?
 
@@ -90,25 +100,20 @@ Aside from your own website, consider Hugging Face the homepage of your AI/machi
 
 ## TODO
 
-- [ ] Prerequisites
-- [ ] Ecosystem overview (transformers, datasets, accelerate, tokenizers, Spaces, demos, models, hub etc.)
-- [x] Text classification
-- [ ] Object detection
-- [ ] Image classification
-- [ ] Named entity recognition
-- [ ] LLM fine-tuning
-- [ ] VLM fine-tuning
-- [ ] RAG workflow
-- [ ] Zero-shot image classification/multi-modal workflows (CLIP)
-
-## Setup
-
-See [setup](https://github.com/mrdbourke/learn-huggingface/blob/main/extras/setup.md).
-
-## Resources
-
-* Hugging Face documentation - https://huggingface.co/
-* Hugging Face cookbook - https://github.com/huggingface/cookbook
+* [ ] Finish outline of this (index.md) page
+   * [ ] Copy a similar version to the README.md for GitHub
+   * [ ] Make share image for the whole thing 
+* [ ] Make index of different projects
+* [ ] Ecosystem overview: transformers, datasets, accelerate, Spaces, Hub, models etc
+* [ ] Practical tutorials
+    * [ ] Text classification (this will be like a "start here" for the Hugging Face ecosystem)
+    * [ ] More to come...
+* [ ] Where to get help? HF forums, HF GitHub, etc
+* [ ] Finish setup page
+   * [ ] Local setup
+* [x] Finish deployment to learnhuggingface.com page
+* [ ] Get started: text classification shows an end-to-end workflow with detailed steps, I'd advise starting here to get to know the ecosystem a bit
+    * [ ] Other projects are more focused on specific tasks with less explanations but still complete code examples 
 
 ## FAQ
 
@@ -116,6 +121,8 @@ See [setup](https://github.com/mrdbourke/learn-huggingface/blob/main/extras/setu
 
 No, it's a personal project by myself ([Daniel Bourke](https://www.mrdbourke.com)) to learn and help others learn the Hugging Face ecosystem.
 
-## Log
+> How is this website made?
 
-11 Feb 2025 - Add object detection base tutorial (code works, but this is a first draft, stay tuned for updates to make it cleaner) 
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
