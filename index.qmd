@@ -6,6 +6,13 @@ Website dedicated to teaching the Hugging Face ecosystem with practical examples
 
 Each example will include an end-to-end approach of starting with a dataset (custom or existing), building and evaluating a model and creating a demo to share.
 
+:::{.callout-tip}
+## Video Course Content
+If you would like step-by-step guidance through each of the projects, they are all [available as video courses on the Zero to Mastery platform](https://dbourke.link/ZTMHuggingFace).
+
+You can sign up and go through them at your own liesure.
+:::
+
 Teaching style: 
 
 A machine learning cooking show! 👨‍🍳
