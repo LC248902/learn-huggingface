@@ -2,94 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.learnhuggingface.com/notebooks_md/hugging_face_object_detection_tutorial.html</loc>
-    <lastmod>2026-09-15T21:27:18.614Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.806Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks_md/hugging_face_text_classification_tutorial.html</loc>
-    <lastmod>2026-09-15T21:27:18.615Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.807Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks_md/hugging_face_llm_structured_data_extraction_evals.html</loc>
-    <lastmod>2026-09-15T21:27:18.613Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.805Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks_md/hugging_face_multimodal_rag_tutorial.html</loc>
-    <lastmod>2026-09-15T21:27:18.613Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.805Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/extras/setup.html</loc>
-    <lastmod>2026-09-15T21:27:18.568Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.761Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/extras/quarto_quick_guide.html</loc>
-    <lastmod>2026-09-15T21:27:18.568Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.761Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/extras/glossary.html</loc>
-    <lastmod>2026-09-15T21:27:18.567Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.760Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_llm_batched_inference_with_transformers.html</loc>
-    <lastmod>2026-09-15T21:27:18.568Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.761Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_llm_full_fine_tune_tutorial.html</loc>
-    <lastmod>2026-09-15T21:27:18.569Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.762Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_text_classification_tutorial.html</loc>
-    <lastmod>2026-09-15T21:27:18.605Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.797Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_llm_inference_with_vllm.html</loc>
-    <lastmod>2026-09-15T21:27:18.569Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.762Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/index.html</loc>
-    <lastmod>2026-09-15T21:27:18.568Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.761Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_vlm_fine_tune_tutorial.html</loc>
-    <lastmod>2026-09-15T21:27:18.612Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.804Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_object_detection_tutorial.html</loc>
-    <lastmod>2026-09-15T21:27:18.604Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.796Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_llm_structured_data_extraction_evals.html</loc>
-    <lastmod>2026-09-15T21:27:18.569Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.762Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks/hugging_face_multimodal_rag_tutorial.html</loc>
-    <lastmod>2026-09-15T21:27:18.579Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.772Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/about.html</loc>
-    <lastmod>2026-09-15T21:27:18.565Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.759Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/extras/todo.html</loc>
-    <lastmod>2026-09-15T21:27:18.568Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.761Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/extras/resources.html</loc>
-    <lastmod>2026-09-15T21:27:18.568Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.761Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks_md/hugging_face_llm_inference_with_vllm.html</loc>
-    <lastmod>2026-09-15T21:27:18.613Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.805Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks_md/hugging_face_vlm_fine_tune_tutorial.html</loc>
-    <lastmod>2026-09-15T21:27:18.615Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.807Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks_md/hugging_face_llm_batched_inference_with_transformers.html</loc>
-    <lastmod>2026-09-15T21:27:18.612Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.805Z</lastmod>
   </url>
   <url>
     <loc>https://www.learnhuggingface.com/notebooks_md/hugging_face_llm_full_fine_tune_tutorial.html</loc>
-    <lastmod>2026-09-15T21:27:18.613Z</lastmod>
+    <lastmod>2026-09-15T21:31:43.805Z</lastmod>
   </url>
 </urlset>
